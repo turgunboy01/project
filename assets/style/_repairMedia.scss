@@ -1,0 +1,41 @@
+@media (max-width: 480px) {
+  .card__container {
+    .card__holder {
+      display: block;
+      .each__card {
+        display: flex;
+        margin: 0 auto;
+        .card__text {
+          margin-bottom: 13px;
+        }
+      }
+    }
+    .buttons {
+      display: block;
+      .btn1,
+      .btn2 {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        // flex-direction: column;
+        margin: 0 auto;
+        margin-bottom: 16px;
+      }
+    }
+  }
+  .stock__holder {
+    .stock__link {
+      gap: 27px;
+      .border {
+        width: 101px;
+      }
+    }
+    .stock__wrapper {
+      display: block;
+      margin-bottom: 17px;
+      .dNone {
+        display: none;
+      }
+    }
+  }
+}
