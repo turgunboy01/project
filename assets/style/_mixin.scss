@@ -1,0 +1,6 @@
+@mixin dFlex($justify: space-between, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  gap: 2rem;
+}
