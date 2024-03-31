@@ -52,9 +52,364 @@
   width: 100%;
   margin: 0 auto;
   padding: 0 20px;
-  list-style-type: none;
+  list-style: none;
 }
 
 a {
   text-decoration: none;
+}
+
+header .head__top {
+  padding: 10px 0;
+  border-bottom: 1px solid rgba(212, 228, 239, 0.603);
+}
+header .head__top .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+header .head__top_left {
+  opacity: 1;
+}
+header .head__top_left .nav__links {
+  display: flex;
+  gap: 45px;
+}
+header .head__top_left .nav__links li {
+  list-style: none;
+}
+header .head__top_left .nav__links a {
+  color: rgb(0, 37, 74);
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+}
+header .head__top_left .nav__links a:hover {
+  color: rgb(39, 172, 226);
+}
+header .head__top_right {
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 15px;
+  color: rgb(0, 37, 74);
+}
+header .head__bottom {
+  position: relative;
+  padding: 17px 0;
+  z-index: 999;
+}
+header .head__bottom .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  position: relative;
+}
+header .head__bottom .container .menu {
+  display: none;
+  padding: 5px;
+  border: 0;
+  background-color: transparent;
+}
+header .head__bottom .container.phone {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+header .head__bottom .container.phone .phone__numbers {
+  position: absolute;
+  display: flex;
+  top: 50px;
+  right: 20px;
+  background: #fff;
+  padding: 30px 60px;
+}
+header .head__bottom .dropdowns .close__menu {
+  display: none;
+}
+header .head__bottom .dropdowns .btns {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+header .head__bottom .dropdowns .btns button {
+  background-color: transparent;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  cursor: pointer;
+  padding: 10px 12px;
+  border-bottom: 4px solid rgba(39, 173, 226, 0.041); /* Button */
+}
+header .head__bottom .dropdowns .btns button h2 {
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 21px;
+  color: rgb(51, 51, 51);
+}
+header .head__bottom .dropdowns .btns button img {
+  width: 19px;
+  height: 13px;
+}
+header .head__bottom .phone__numbers {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+header .head__bottom .phone__numbers img {
+  margin-top: 5px;
+}
+header .head__bottom .phone__numbers h3 {
+  color: rgb(0, 37, 74);
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 20px;
+}
+header .head__bottom .phone__numbers a {
+  color: rgb(57, 153, 229);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+}
+header .head__bottom .phone__numbers .local {
+  position: relative;
+}
+header .head__bottom .phone__numbers .local img {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+}
+header .head__bottom .phone__numbers .local img:nth-child(1) {
+  left: -10px;
+  z-index: 9;
+}
+header .head__bottom .phone__numbers .local img:nth-child(2) {
+  left: 5px;
+  z-index: 1;
+}
+header .head__bottom .phonebtn {
+  display: none;
+  width: 42px;
+  height: 42px;
+  border: 0;
+  border-radius: 50%;
+  background-color: rgb(39, 172, 226);
+}
+header .head__bottom .dropdowns.active1 .tables1 {
+  display: block;
+}
+header .head__bottom .dropdowns.active1 #mobile {
+  border-bottom: 4px solid rgb(39, 172, 226); /* Button */
+}
+header .head__bottom .dropdowns.active2 .tables2 {
+  display: block;
+}
+header .head__bottom .dropdowns.active2 #tablet {
+  border-bottom: 4px solid rgb(39, 172, 226); /* Button */
+}
+header .head__bottom .tables1,
+header .head__bottom .tables2 {
+  position: absolute;
+  left: 0;
+  top: 70px;
+  display: none;
+  width: 100%;
+  padding: 30px 0;
+  background-color: #fff;
+}
+header .head__bottom .tables1 .container,
+header .head__bottom .tables2 .container {
+  position: relative;
+}
+header .head__bottom .tables1 .container button,
+header .head__bottom .tables2 .container button {
+  position: absolute;
+  top: -30px;
+  right: 10px;
+  cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-size: 30px;
+}
+header .head__bottom .tables1 .row,
+header .head__bottom .tables2 .row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+header .head__bottom .tables1 .row .mobile__content,
+header .head__bottom .tables2 .row .mobile__content {
+  width: 240px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+header .head__bottom .tables1 .row .mobile__content img,
+header .head__bottom .tables2 .row .mobile__content img {
+  max-width: 40px;
+  width: 100%;
+  height: 30px;
+}
+header .head.menu .head__top {
+  position: absolute;
+  width: 100%;
+  z-index: 999;
+  top: 170px;
+  display: flex;
+  background-color: #fff;
+  align-items: center;
+}
+header .head.menu .head__top .nav__links {
+  flex-direction: column;
+  gap: 23px;
+}
+header .head.menu .head__bottom .dropdowns {
+  background-color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  left: 0%;
+  position: absolute;
+  padding-top: 130px;
+}
+header .head.menu .head__bottom .dropdowns .btns {
+  align-items: flex-start;
+  padding: 10px;
+  padding-left: 5px;
+}
+header .head.menu .head__bottom .dropdowns .tables1,
+header .head.menu .head__bottom .dropdowns .tables2 {
+  top: 100px;
+}
+header .head.menu .head__bottom .dropdowns .close__menu {
+  display: flex;
+  position: absolute;
+  gap: 1rem;
+  cursor: pointer;
+  text-align: left;
+  z-index: 999;
+  color: #fff;
+  padding: 18px;
+  padding-left: 50px;
+  top: 75px;
+  font-size: 20px;
+  background-color: rgb(39, 172, 226);
+  border: 0;
+  width: 100%;
+}
+header .head.menu .head__bottom .dropdowns .btns {
+  flex-direction: column;
+  gap: 1rem;
+}
+header .hero {
+  background-image: url("../img/header/bg.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 100%;
+  position: relative;
+}
+header .hero::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 150px;
+  background-color: rgb(39, 172, 226);
+  left: 0;
+  top: 20%;
+}
+header .hero__content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 60px 0;
+  padding-left: 37px;
+}
+header .hero__content h2 {
+  color: rgb(61, 61, 61);
+  font-size: 36px;
+  font-weight: 900;
+  line-height: 42px;
+}
+header .hero__content p {
+  color: rgb(61, 61, 61);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21px;
+}
+header .hero__content a {
+  padding: 12px 32px;
+  padding-left: 38px;
+  width: 226px;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 16px;
+  border-radius: 4px;
+  background: rgb(39, 172, 226);
+}
+
+@media (max-width: 1000px) {
+  header .head__top .head__top_right {
+    display: none;
+  }
+  header .head__bottom .phone__numbers {
+    display: none;
+  }
+  header .head__bottom .phonebtn {
+    display: block;
+  }
+}
+@media (max-width: 750px) {
+  header .head__top {
+    display: none;
+  }
+  header .head__bottom .container .menu {
+    display: block;
+  }
+  header .head__bottom .dropdowns {
+    display: none;
+  }
+  header .head.menu .head__bottom .dropdowns .tables1,
+  header .head.menu .head__bottom .dropdowns .tables2 {
+    top: 250px;
+  }
+  header .hero {
+    background-size: 100% 200px;
+    background-position: center;
+  }
+  header .hero::after {
+    height: 100px;
+  }
+  header .hero .hero__content {
+    padding: 30px 10px;
+  }
+  header .hero .hero__content h2 {
+    font-size: 18px;
+    font-weight: 900;
+    line-height: 21px;
+  }
+  header .hero .hero__content p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16px;
+  }
+}
+@media (max-width: 500px) {
+  .hero {
+    position: relative;
+  }
+  .hero .hero__content a {
+    position: absolute;
+    bottom: -50px;
+    left: 25%;
+  }
 }/*# sourceMappingURL=style.css.map */
