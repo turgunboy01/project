@@ -39,3 +39,33 @@
     }
   }
 }
+@media (max-width: 480px){
+  .step{
+    .step__container{
+    display: block;
+  }
+  .step__card1{
+    align-items: center;
+    padding: 0 90px;
+  }
+  .step__card2{
+    align-items: center;
+    padding: 0 90px;
+  }
+  .step__card3{
+    align-items: center;
+    padding: 0 90px;
+  }
+  ul{
+   display: block; 
+li{
+  background: none;
+}
+.vector{
+position: absolute;
+transform: rotate(90deg);
+padding: 0 160px;
+
+}
+  }
+}}
