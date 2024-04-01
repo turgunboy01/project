@@ -1,0 +1,401 @@
+// step main
+
+.step {
+  background-color: rgb(245, 245, 245);
+  margin-top: 40px;
+  &__container {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+  &__title {
+    color: rgb(61, 61, 61);
+    font-size: 38px;
+    font-weight: 700;
+    text-align: center;
+    padding: 50px 0;
+  }
+  &__arrow {
+    width: 148px;
+    height: 143px;
+    border-radius: 100px;
+    margin-left: 55px;
+    background-color: rgb(255, 255, 255);
+  }
+  &__num {
+    position: absolute;
+    color: rgb(212, 228, 239);
+    font-size: 160px;
+    font-weight: 700;
+    margin-top: -20px;
+  }
+  &__text {
+    color: rgb(61, 61, 61);
+    font-size: 16px;
+    font-weight: 400;
+    padding: 35px 0;
+    text-align: center;
+  }
+  ul {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+
+    li {
+      width: 6px;
+      height: 7px;
+      margin-top: 20px;
+      background: rgb(212, 228, 239);
+      border-radius: 10px;
+    }
+  }
+  .vector {
+    position: relative;
+    margin-bottom: 140px;
+  }
+}
+
+.repair {
+  .card__container {
+    padding-top: 49px;
+    .card__title {
+      color: var(--Text, #3d3d3d);
+      text-align: center;
+      font-family: Roboto;
+      font-size: 36px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      margin-bottom: 7px;
+    }
+    .card__subtitle {
+      color: var(--Text, #3d3d3d);
+      font-family: Roboto;
+      font-size: 15px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .card__holder {
+      @include dFlex;
+      flex-wrap: wrap;
+      margin-bottom: 39px;
+
+      .each__card {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 190px;
+        .img__bg {
+          width: 148px;
+          height: 148px;
+          background: #f3f8fb;
+          border-radius: 50%;
+          padding: 33px 31px 31px 32px;
+          margin-bottom: 11px;
+        }
+        .card__text {
+          color: #3d3d3d;
+          text-align: center;
+          font-family: Roboto;
+          font-size: 15px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+        }
+      }
+    }
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 28px;
+      margin-bottom: 56px;
+
+      .btn1,
+      .btn2 {
+        width: 214px;
+        height: 40px;
+        flex-shrink: 0;
+        border-radius: 4px;
+        border: 2px solid #27ace2;
+      }
+      .btn1 {
+        border-radius: 4px;
+        background: var(--Button, #27ace2);
+        cursor: pointer;
+      }
+      .btn2 {
+        background: transparent;
+        cursor: pointer;
+      }
+
+      .left__btn {
+        color: #fff;
+        font-family: "Roboto Condensed";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+      }
+      .right__btn {
+        color: var(--Button, #27ace2);
+        font-family: "Roboto Condensed";
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-transform: uppercase;
+      }
+    }
+  }
+}
+
+.sale {
+  background: #f5f5f5;
+}
+.stock__holder {
+  padding-top: 33px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .stock__link {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #d4e4ef;
+    .border {
+      color: var(--Text, #3d3d3d);
+      font-family: Roboto;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      padding-bottom: 15px;
+      border-bottom: 5px solid #27ace2;
+      text-align: center;
+      width: 141px;
+    }
+    .blur__text {
+      color: var(--Text, #3d3d3d);
+      font-family: Roboto;
+      font-size: 30px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      opacity: 0.8;
+    }
+  }
+  .stock__wrapper {
+    @include dFlex;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin-bottom: 40px;
+    div {
+      width: 350px;
+    }
+    img {
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    p {
+      color: #3d3d3d;
+      font-family: Roboto;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: normal;
+    }
+  }
+  .last__btn {
+    width: 177px;
+    height: 40px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: var(--Button, #27ace2);
+    border: none;
+    margin-bottom: 54px;
+    cursor: pointer;
+    a {
+      color: #fff;
+      font-family: "Roboto Condensed";
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+  }
+}
+
+// Hidden Menu Js
+
+.hidden__menu {
+  border: 1px solid black;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0 auto;
+  width: 472px;
+  height: 311px;
+  border-radius: 4px;
+  background: rgb(255, 255, 255);
+
+  .top__menu {
+    /* BG_Search */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 53px;
+    margin-bottom: 24px;
+    background: rgb(243, 248, 251);
+
+    h1 {
+      /* Text H3 */
+      color: rgb(0, 37, 74);
+      font-family: Roboto;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 28px;
+      letter-spacing: 0%;
+      text-align: left;
+    }
+  }
+  .hero {
+    padding: 0px 36px 35px 36px;
+  }
+  p {
+    /* Text */
+    color: rgb(0, 37, 74);
+    font-family: Roboto;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0%;
+    text-align: left;
+    margin: 0 10px;
+  }
+  form {
+    width: 390px;
+    height: 38px;
+    box-sizing: border-box;
+    border: 1px solid rgba(23, 113, 185, 0.2);
+    border-radius: 4px;
+    background: rgb(255, 255, 255);
+    display: flex;
+    align-items: center;
+    padding: 9px;
+    margin-bottom: 13px;
+    #name {
+      width: 300px;
+      border: none;
+      outline: none;
+    }
+    #name::placeholder {
+      color: rgb(55, 69, 97);
+      font-family: Roboto;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: 0%;
+      text-align: left;
+      /* Черный / Основной */
+      opacity: 0.4;
+    }
+  }
+  .hidden__btn {
+    width: 214px;
+    height: 40px;
+    border-radius: 4px;
+    background: rgb(39, 172, 226);
+    border: none;
+    cursor: pointer;
+    margin-top: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+
+    a {
+      /* Button */
+      color: rgb(255, 255, 255);
+      font-family: Roboto Condensed;
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 16px;
+      letter-spacing: 0%;
+      text-align: left;
+      text-transform: uppercase;
+    }
+  }
+}
+.map__section {
+  margin: 20px 0;
+  width: 100%;
+  .map__title {
+    @include dFlex(center);
+    h2 {
+      text-align: center;
+      padding: 36px 0;
+    }
+  }
+  .map {
+    // max-width: 1100px;
+    width: 100%;
+    border-bottom: 5px solid rgb(39, 172, 226);
+  }
+}
+@media (max-width: 750px) {
+  .stock__holder {
+    .stock__wrapper {
+      align-items: center;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .repair {
+    margin-top: 40px;
+    .card__container {
+      .buttons {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  }
+}
+
+@media (max-width: 1100px) {
+  .step {
+    .step__container {
+      display: block;
+    }
+    .step__card1,
+    .step__card2,
+    .step__card3 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 90px;
+    }
+
+    ul {
+      display: flex;
+      justify-content: center;
+      padding: 60px 0;
+      margin-left: 50px;
+      li {
+        background: none;
+      }
+      .vector {
+        position: absolute;
+        transform: rotate(90deg);
+        padding: 0 160px;
+      }
+    }
+  }
+}
