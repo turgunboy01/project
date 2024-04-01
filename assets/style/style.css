@@ -548,7 +548,6 @@ header .hero__content a {
 }
 .repair .card__container .buttons .left__btn {
   color: #fff;
-  font-family: "Roboto Condensed";
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -557,7 +556,6 @@ header .hero__content a {
 }
 .repair .card__container .buttons .right__btn {
   color: var(--Button, #27ace2);
-  font-family: "Roboto Condensed";
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
@@ -597,7 +595,6 @@ header .hero__content a {
 }
 .stock__holder .stock__link .blur__text {
   color: var(--Text, #3d3d3d);
-  font-family: Roboto;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -622,7 +619,6 @@ header .hero__content a {
 }
 .stock__holder .stock__wrapper p {
   color: #3d3d3d;
-  font-family: Roboto;
   font-size: 20px;
   font-style: normal;
   font-weight: 500;
@@ -640,7 +636,6 @@ header .hero__content a {
 }
 .stock__holder .last__btn a {
   color: #fff;
-  font-family: "Roboto Condensed";
   font-size: 14px;
   font-style: normal;
   font-weight: 700;
